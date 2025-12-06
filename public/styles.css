@@ -1,18 +1,19 @@
+/* Reset */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* Base */
 body {
     background-color: #121212;
     color: #f0f8f0;
+    font-family: Montserrat;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2em;
     overflow-y: hidden;
-    overflow-y: scroll;
-    font-family: Montserrat;
 }
 
 a {
@@ -30,15 +31,15 @@ p {
     font-size: 25px;
 }
 
-.section {
-    margin-top: 2em;
-/*     outline: solid red; */
-}
-
 strong {
     color: #8f8ff5;
 }
 
+.section {
+    margin-top: 2em;
+}
+
+/* Hero */
 .hero {
     display: flex;
     flex-direction: column;
@@ -51,28 +52,31 @@ strong {
     text-transform: capitalize;
     font-size: 4em;
 }
-.hero_img{
+
+.hero_img {
     border-radius: 50%;
 }
+
 .hero_p {
     font-size: 1.5em;
     text-align: center;
 }
 
+/* About */
 .about {
     display: flex;
     flex-direction: row;
-    gap: 5em;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    gap: 5em;
 }
 
 .about-content {
     display: flex;
     flex-direction: column;
-    gap: 1.5em;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    gap: 1.5em;
 }
 
 .about-img {
@@ -80,11 +84,11 @@ strong {
     height: 500px;
 }
 
+/* Footer */
 .footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-items: center;
     gap: 0.5em;
 }
 
@@ -93,13 +97,16 @@ strong {
     list-style: none;
     gap: 2em;
 }
+
 .footer-text {
-    font-size: 1em
+    font-size: 1em;
 }
+
 .footer_link:hover {
     text-decoration: none;
 }
-.footer_link-img{
+
+.footer_link-img {
     color: white;
     width: 35px;
     height: 35px;
