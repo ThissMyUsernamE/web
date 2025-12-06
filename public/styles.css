@@ -15,8 +15,24 @@ body {
     font-family: Montserrat;
 }
 
+a {
+    text-decoration: none;
+    color: #e0cc70;
+}
+
+h2 {
+    text-transform: capitalize;
+    font-size: 2.5em;
+}
+
+p {
+    max-width: 40ch;
+    font-size: 25px;
+}
+
 .section {
     margin-top: 2em;
+/*     outline: solid red; */
 }
 
 strong {
@@ -28,7 +44,7 @@ strong {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1.5em;
+    gap: 3em;
 }
 
 .hero_h {
@@ -39,12 +55,32 @@ strong {
     border-radius: 50%;
 }
 .hero_p {
-    font-size: 2em;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img {
+    width: 750px;
+    height: 500px;
 }
 
 .footer {
-    position: fixed;
-    bottom: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,12 +93,14 @@ strong {
     list-style: none;
     gap: 2em;
 }
-
+.footer-text {
+    font-size: 1em
+}
 .footer_link:hover {
     text-decoration: none;
 }
 .footer_link-img{
     color: white;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
 }
